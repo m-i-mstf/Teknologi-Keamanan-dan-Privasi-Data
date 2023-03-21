@@ -4,11 +4,9 @@ def enkripsi(teks,s):
     for i in range(len(teks)):
         char = teks[i]
  
-        # Encrypt uppercase characters
         if (char.isupper()):
             hasil += chr((ord(char) + s-65) % 26 + 65)
  
-        # Encrypt lowercase characters
         else:
             hasil += chr((ord(char) + s - 97) % 26 + 97)
  
